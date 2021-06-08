@@ -1,10 +1,9 @@
+using Microsoft.Azure.ServiceBus;
+using Pat.Sender.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
-using Microsoft.Azure.ServiceBus.Primitives;
-using Pat.Sender.Extensions;
 
 namespace Pat.Sender
 {
@@ -44,7 +43,7 @@ namespace Pat.Sender
                 try
                 {
                     TopicClient client;
-                    if (_senderSettings.TokenProvider != null) 
+                    if (_senderSettings.TokenProvider != null)
                     {
                         client = TopicClientResolver.GetTopic(connectionString, _senderSettings.EffectiveTopicName, _senderSettings.TokenProvider);
                     }

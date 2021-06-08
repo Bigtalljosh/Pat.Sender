@@ -1,7 +1,7 @@
-﻿using System.Collections.Concurrent;
-using System.Collections.Generic;
-using Microsoft.Azure.ServiceBus;
+﻿using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.ServiceBus.Primitives;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
 
 namespace Pat.Sender
 {

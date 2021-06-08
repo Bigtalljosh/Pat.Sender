@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.Azure.ServiceBus;
+﻿using Microsoft.Azure.ServiceBus;
+using System;
 
 namespace Pat.Sender.MessageGeneration
 {

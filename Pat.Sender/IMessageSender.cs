@@ -1,6 +1,6 @@
+using Microsoft.Azure.ServiceBus;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
 
 namespace Pat.Sender
 {

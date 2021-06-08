@@ -1,10 +1,10 @@
-﻿using Pat.Sender.Extensions;
+﻿using Microsoft.Azure.ServiceBus;
+using Pat.Sender.Extensions;
 using Pat.Sender.MessageGeneration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
 
 namespace Pat.Sender
 {
