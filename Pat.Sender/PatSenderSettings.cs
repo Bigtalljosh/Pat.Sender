@@ -1,15 +1,15 @@
-using System;
 using Microsoft.Azure.ServiceBus.Primitives;
+using System;
 
 namespace Pat.Sender
 {
     public class PatSenderSettings
     {
-        public PatSenderSettings ()
-	    {
+        public PatSenderSettings()
+        {
             TopicName = "pat";
             UseDevelopmentTopic = true;
-	    }
+        }
 
         /// <summary>
         /// Name of topic where messages will be sent

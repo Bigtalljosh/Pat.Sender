@@ -12,7 +12,7 @@ namespace Pat.Sender.NetCoreLog
         {
             this.log = log;
         }
-        
+
         /// <inheritdoc />
         public void LogCritical(string message)
             => log.LogCritical(message);

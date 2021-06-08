@@ -1,10 +1,10 @@
-﻿using System.Text;
-using Microsoft.Azure.ServiceBus;
+﻿using Microsoft.Azure.ServiceBus;
 using Newtonsoft.Json;
+using System.Text;
 
 namespace Pat.Sender.MessageGeneration
 {
-    public class MessageGenerator: IMessageGenerator
+    public class MessageGenerator : IMessageGenerator
     {
         public Message GenerateBrokeredMessage(object payload)
         {
