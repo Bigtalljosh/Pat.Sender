@@ -20,12 +20,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Pat.Sender\Pat.Sender.csproj" />
     <PackageReference Include="log4net" Version="2.0.12" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Pat.Sender\Pat.Sender.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,10 @@
-﻿using NSubstitute;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using System.Linq;
-using Microsoft.Azure.ServiceBus;
-using Xunit;
+﻿using Microsoft.Azure.ServiceBus;
+using NSubstitute;
 using Pat.Sender.Legacy;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Xunit;
 
 namespace Pat.Sender.UnitTests
 {
