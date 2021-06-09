@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.3
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pat.Sender", "Pat.Sender\Pat.Sender.csproj", "{330E36A6-8D76-439C-90C8-A2EB87B660B5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pat.Sender.UnitTests", "Pat.Sender.UnitTests\Pat.Sender.UnitTests.csproj", "{C8E86715-05A3-492F-AA96-7D41973D528D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pat.Sender.Log4Net", "Pat.Sender.Log4Net\Pat.Sender.Log4Net.csproj", "{52B6CC38-AD74-44B7-AB45-60833348C826}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pat.Sender.Log4Net", "Pat.Sender.Log4Net\Pat.Sender.Log4Net.csproj", "{52B6CC38-AD74-44B7-AB45-60833348C826}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pat.Sender.NetCoreLog", "Pat.Sender.NetCoreLog\Pat.Sender.NetCoreLog.csproj", "{086427A3-F905-48E7-BDB2-4E4E943B231F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pat.Sender.NetCoreLog", "Pat.Sender.NetCoreLog\Pat.Sender.NetCoreLog.csproj", "{086427A3-F905-48E7-BDB2-4E4E943B231F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

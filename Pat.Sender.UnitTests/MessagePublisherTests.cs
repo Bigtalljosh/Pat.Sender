@@ -1,4 +1,5 @@
-﻿using NSubstitute;
+﻿using Microsoft.Azure.ServiceBus;
+using NSubstitute;
 using Pat.Sender.Correlation;
 using Pat.Sender.Extensions;
 using Pat.Sender.MessageGeneration;
@@ -6,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.Azure.ServiceBus;
 using Xunit;
 
 namespace Pat.Sender.UnitTests
@@ -28,7 +28,7 @@ namespace Pat.Sender.UnitTests
             var messagePublisher = CreatePublisher(messageSender);
             await messagePublisher.PublishEvent(new Event1());
             await messageSender.Received(1)
-                .SendMessages(Arg.Is<IEnumerable<Message>>(p => 
+                .SendMessages(Arg.Is<IEnumerable<Message>>(p =>
                 p.Any(m => ((string)m.UserProperties["MessageType"]).Equals("Pat.Sender.UnitTests.Event1"))));
         }
 
@@ -186,7 +186,7 @@ namespace Pat.Sender.UnitTests
         {
             var messageSender = Substitute.For<IMessageSender>();
             var messagePublisher = CreatePublisher(messageSender);
-            await messagePublisher.SendCommands(new[] {new Event1(), new Event1()}, "TestSubscriber");
+            await messagePublisher.SendCommands(new[] { new Event1(), new Event1() }, "TestSubscriber");
             await messageSender.Received(1)
                 .SendMessages(Arg.Is<IEnumerable<Message>>(p =>
                     p.Count(m => ((string)m.UserProperties["SpecificSubscriber"]).Equals("TestSubscriber")) == 2));
